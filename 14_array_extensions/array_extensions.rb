@@ -1,7 +1,23 @@
-def sum
-  a = 0
-  self.each do |x|
-    a += x
+class Array
+
+  def sum
+    sum = 0
+    self.each do |x|
+      sum += x
+    end
+    sum
   end
-  a
+
+  def square
+      self.map do |x|
+        x**2
+      end
+  end
+
+  def square!
+    self.map! do |x|
+      x**2
+    end
+  end
+
 end
